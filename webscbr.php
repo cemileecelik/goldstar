@@ -138,7 +138,7 @@ for ($i = 0; $i < count($contInfos); $i++) {
     }
 }
 
-//print_r($containers);
+print_r($containers);
 
 function getMovements($topInfos, $routeInfos)
 {
@@ -155,7 +155,6 @@ function getMovements($topInfos, $routeInfos)
 }
 
 $totalMovs = [];
-
 if (!empty($routeInfos) && !empty($topInfos))
     $totalMovs = getMovements($topInfos, $routeInfos);
 
@@ -165,4 +164,3 @@ if (!empty($routeInfos) && !empty($topInfos))
 
 
 //  exit;
-
